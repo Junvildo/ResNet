@@ -5,8 +5,6 @@ import torch.nn.functional as F
 
 seq = nn.Sequential
 
-r18_34 = ["ResNet_18", "ResNet_34"]
-r50_101_152 = ["ResNet_50", "ResNet_101", "ResNet_152"]
 
 def weights_init(m):
     classname = m.__class__.__name__
