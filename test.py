@@ -3,7 +3,7 @@ from models import *
 
 input = torch.rand(1,3,224,224)
 
-model = ResNet_18(num_class=2)
+model = ResNet_50(num_class=1000)
 output = model(input)
 
 print(output.shape)

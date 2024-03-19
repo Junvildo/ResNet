@@ -41,7 +41,7 @@ if __name__ == '__main__':
                                 batch_size = args.batch_size,
                                 shuffle = False)
     
-    model = ResNet_18(num_class=2)
+    model = ResNet_50(num_class=2)
     checkpoint = 'None'
     if args.ckpt != 'None':
         checkpoint = torch.load(args.ckpt)
